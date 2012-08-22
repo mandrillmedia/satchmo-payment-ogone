@@ -29,6 +29,8 @@ from satchmo_ogone.payment.modules.ogone.utils import get_ogone_request
 from django_ogone import status_codes
 
 log = logging.getLogger('satchmo_payment_ogone')
+hdlr = logging.FileHandler('/var/tmp/ogone.log')
+log.addHandler(hdlr) 
 
 from django.contrib.sites.models import Site
 
@@ -114,7 +116,7 @@ def confirm_info(request):
                                 catalogurl=catalogurl,
                                 language=getattr(request, 'LANGUAGE_CODE', 'en_US'))
     
-    context.update({'order': order})
+    context.update({'order': order,"default_view_tax": config_value('TAX', 'DEFAULT_VIEW_TAX')})
     
     return render_to_response(template, context, RequestContext(request))
 
@@ -152,7 +154,8 @@ def order_status_update(request, order=None):
         payment_id = ogone.get_order_id()
         
         try:
-            ogone_payment = OrderPayment.objects.get(pk=payment_id)
+            #changed from the original. formerly it was using get(pk= and changed to get(order=
+            ogone_payment = OrderPayment.objects.get(order=payment_id)
         except OrderPayment.DoesNotExist:
             log.warning('Payment with payment_id=%d not found.', payment_id)
             

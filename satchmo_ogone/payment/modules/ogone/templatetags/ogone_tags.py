@@ -46,8 +46,8 @@ def get_ogone_form(context):
     context['success_url'] = reverse_full_url('OGONE_satchmo_checkout-success')
     context['failure_url'] = reverse_full_url('OGONE_satchmo_checkout-failure')
     context['homeurl'] = reverse_full_url('satchmo_shop_home')
-    context['catalogurl'] = reverse_full_url('satchmo_category_index')
     """
+    context['catalogurl'] = reverse_full_url('satchmo_category_index')
     context['form'] = Ogone.get_form(data)
     context['action'] = Ogone.get_action()
 
