@@ -116,7 +116,7 @@ def confirm_info(request):
                                 catalogurl=catalogurl,
                                 language=getattr(request, 'LANGUAGE_CODE', 'en_US'))
     
-    context.update({'order': order,"default_view_tax": config_value('TAX', 'DEFAULT_VIEW_TAX')})
+    context.update({'order': order,"default_view_tax": config_value('TAX', 'DEFAULT_VIEW_TAX'),'PAYMENT_LIVE':settings.PRODUCTION})
     
     return render_to_response(template, context, RequestContext(request))
 
