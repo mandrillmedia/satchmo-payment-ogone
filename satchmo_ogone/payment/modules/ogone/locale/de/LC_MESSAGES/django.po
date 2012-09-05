@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-05 14:31+0200\n"
+"POT-Creation-Date: 2012-09-05 15:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,9 +155,15 @@ msgstr ""
 msgid "Payment"
 msgstr ""
 
+#: templates/shop/checkout/ogone/confirm.html:15
+#: templates/shop/checkout/ogone/confirm_ogone.html:11
+msgid "PAYMENT TEST MODE"
+msgstr "Zahlungsanbieter"
+
 #: templates/shop/checkout/ogone/confirm.html:16
 msgid "Your payment will be processed through Ogone."
-msgstr "Ihre Zahlung wird über unseren Payment Service Provider OGONE abgewickelt."
+msgstr ""
+"Ihre Zahlung wird über unseren Payment Service Provider OGONE abgewickelt."
 
 #: templates/shop/checkout/ogone/confirm.html:27
 #: templates/shop/checkout/ogone/confirm_ogone.html:18
@@ -167,4 +173,5 @@ msgstr ""
 
 #: templates/shop/checkout/ogone/confirm_ogone.html:12
 msgid "Your payment will be processed through Ogone Payments."
-msgstr "Ihre Zahlung wird über unseren Payment Service Provider OGONE abgewickelt."
+msgstr ""
+"Ihre Zahlung wird über unseren Payment Service Provider OGONE abgewickelt."
