@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-05 14:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: config.py:5
+msgid "Ogone Payment Module Settings"
+msgstr ""
+
+#: config.py:12
+msgid "Currency Code"
+msgstr ""
+
+#: config.py:13
+msgid "Currency code for Ogone transactions."
+msgstr ""
+
+#: config.py:18
+msgid "PSPID"
+msgstr ""
+
+#: config.py:19
+msgid "Ogone account name"
+msgstr ""
+
+#: config.py:23
+msgid "Outgoing secret"
+msgstr ""
+
+#: config.py:24
+msgid "Secret used for outgoing payment requests."
+msgstr ""
+
+#: config.py:28
+msgid "Incoming secret"
+msgstr ""
+
+#: config.py:29
+msgid "Secret used for incoming payment status updates."
+msgstr ""
+
+#: config.py:33
+msgid "Hash method"
+msgstr ""
+
+#: config.py:34
+msgid "Hashing algorithm used for signing messages."
+msgstr ""
+
+#: config.py:40
+msgid "Post URL"
+msgstr ""
+
+#: config.py:41
+msgid "The Ogone URL for real transaction posting."
+msgstr ""
+
+#: config.py:46
+msgid "Ogone test URL"
+msgstr ""
+
+#: config.py:47
+msgid "The Ogone URL for test transaction posting."
+msgstr ""
+
+#: config.py:52
+msgid "Accept real payments"
+msgstr ""
+
+#: config.py:53
+msgid "False if you want to be in test mode"
+msgstr ""
+
+#: config.py:58
+msgid "Implementation module"
+msgstr ""
+
+#: config.py:64
+msgid "Module key"
+msgstr ""
+
+#: config.py:70
+msgid "English name for this group on the checkout screens"
+msgstr ""
+
+#: config.py:72
+msgid "This will be passed to the translation utility"
+msgstr ""
+
+#: config.py:76
+msgid ""
+"The url base used for constructing urlpatterns which will use this module"
+msgstr ""
+
+#: config.py:81
+msgid "Verbose logs"
+msgstr ""
+
+#: config.py:82
+msgid "Add extensive logs during post."
+msgstr ""
+
+#: views.py:88
+msgid "Your order is no longer valid."
+msgstr ""
+
+#: views.py:212
+msgid "Payment accepted by Ogone."
+msgstr ""
+
+#: views.py:222
+msgid "Payment is being processed by Ogone."
+msgstr ""
+
+#: views.py:232
+msgid "Order cancelled through Ogone."
+msgstr ""
+
+#: views.py:238
+msgid "Payment declined by Ogone."
+msgstr ""
+
+#: templates/shop/checkout/ogone/confirm.html:6
+msgid ""
+"The following error was returned while trying to process your card.  Please "
+"correct and resubmit"
+msgstr ""
+
+#: templates/shop/checkout/ogone/confirm.html:9
+msgid "Home"
+msgstr ""
+
+#: templates/shop/checkout/ogone/confirm.html:10
+msgid "Checkout"
+msgstr ""
+
+#: templates/shop/checkout/ogone/confirm.html:14
+#: templates/shop/checkout/ogone/confirm_ogone.html:7
+#: templates/shop/checkout/ogone/confirm_ogone.html:10
+msgid "Payment"
+msgstr ""
+
+#: templates/shop/checkout/ogone/confirm.html:16
+msgid "Your payment will be processed through Ogone."
+msgstr "Ihre Zahlung wird über unseren Payment Service Provider OGONE abgewickelt."
+
+#: templates/shop/checkout/ogone/confirm.html:27
+#: templates/shop/checkout/ogone/confirm_ogone.html:18
+#: templates/shop/checkout/ogone/confirm_ogone.html:65
+msgid "Purchase Items"
+msgstr ""
+
+#: templates/shop/checkout/ogone/confirm_ogone.html:12
+msgid "Your payment will be processed through Ogone Payments."
+msgstr "Ihre Zahlung wird über unseren Payment Service Provider OGONE abgewickelt."
